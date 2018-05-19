@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Netflix (Pirate)</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./models/Player.js"></script>
+  <script src="./models/Element.js"></script>
+  <script src="./models/Category.js"></script>
+</head>
+
+<body>
+
+  <header></header>
+  <div id="featured">
+
+    <div class="description">
+      <div class="title">
+        GAMES OF THRONES
+      </div>
+      <div class="details"></div>
+      <div class="synopsis">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus recusandae repellat, illum neque a perferendis molestias, aperiam sequi quod dicta modi laudantium unde exercitationem fugiat necessitatibus nihil minus ipsum?
+      </div>
+      <div class="facts">
+        <div class="icon"></div>
+        <div class="factText"></div>
+      </div>
+    </div>
+
+  </div>
+  <div id="content">
+    <div class="category">
+      <div class="title">Your list</div>
+      <div class="scrollingBar">
+      </div>
+    </div>
+
+    <div class="category">
+      <div class="title">Action</div>
+      <div class="scrollingBar">
+      </div>
+    </div>
+  </div>
+  <div id="player"></div>
+  <script>
+    var p = new Player(null);
+
+    function handleClick(e) {
+      p.src = `./assets/songs/${e.target.parentElement.dataset.song}`;
+      p.play();
+    }
+
+    var el = new Element("avicii.mp3", "whiteCollar.webp");
+    console.log(document.querySelectorAll(".category .scrollingBar")[1].appendChild(el.DOMElement));
+
+    var cat = new Category("New Cat", el);
+    document.querySelector('#content').appendChild(cat.DOMElement);
+  </script>
+</body>
+
+</html>

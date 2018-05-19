@@ -1,0 +1,30 @@
+{
+  "featured": {
+    "description": {
+      "title": "Superman",
+"details": {},
+"synopsis": "Superman die in battle with Doomsday",
+"facts": {
+  "icon": "",
+"factText": ""
+},
+    }
+  },
+  "content":{
+    "category":[
+      {
+        "title": "Watching",
+        "scrollingBar": [
+          {
+            "song": "assets/miniatures/blackmirror.jpg",
+            "img": "./assets/songs/superman-movie.mp3"
+          },
+          {
+            "song": "assets/miniatures/forrestGump.jpg",
+            "img": "./assets/songs/Godzilla-Theme-Song.mp3"
+          }
+        ]
+      }
+    ]
+  }
+}

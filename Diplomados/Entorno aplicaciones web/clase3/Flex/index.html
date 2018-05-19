@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FlexBoxes</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <header>
+      <nav onclick="openMenu()">
+      </nav>
+    </header>
+    <div id="contenido">
+      <div id="lateralIzquierdo">LI</div>
+      <div id="timeline">Timeline</div>
+      <div id="lateralDerecho">LD</div>
+    </div>
+  </div>
+  <script>
+    function openMenu() {
+      var li = document.getElementById("lateralIzquierdo");
+      console.log(li.style.left);
+      if (li.style.left != "0px") {
+        li.style.left = 0;
+      } else {
+        li.style.left = "-100%";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

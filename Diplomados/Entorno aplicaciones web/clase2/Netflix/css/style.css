@@ -72,6 +72,10 @@ header div img {
   width: 20%;
 }
 
+#featured .description > img{
+  display: none;
+}
+
 #featured .description .details span {
   font-size: 16px;
   color: #d4d4d4;
@@ -167,4 +171,49 @@ header div img {
 }
 #content .category .element img {
   width: 100%;
+}
+
+@media (max-width: 400px) {
+  #featured .description .synopsis {
+    white-space: nowrap;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .full {
+    white-space: unset !important;
+    max-width: 100% !important;
+  }
+  #featured .description > img{
+    display: block;
+    height: 35px;
+    width: 35px;
+  }
+  #featured .description .facts {
+    display: none;
+  }
+
+  #content {
+    top: -35%;
+  }
+
+
+  #content .category .scrollingBar {
+    flex-flow: row wrap;
+  }
+
+  #content .category .element {
+    /* width: 210px; */
+    /* height: 134px; */
+    /* border: 1px dashed white; */
+    margin-left: 0;
+    flex: 0 0 50%;
+  }
+
+  #content .category .character {
+    height: auto;
+    flex: 0 0 100% !important;
+    flex-flow: row wrap;
+  }
 }

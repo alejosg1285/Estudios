@@ -28,15 +28,16 @@
         <label class="quality">HD</label>
         <label class="quality">5.1</label>
       </div>
-      <div class="synopsis">
+      <div id="synopsis" class="synopsis">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus recusandae repellat, illum neque a perferendis molestias, aperiam sequi quod dicta modi laudantium unde exercitationem fugiat necessitatibus nihil minus ipsum?
       </div>
-      <div class="facts">
+      <div id="facts" class="facts">
         <div class="icon">
           <img src="assets/trophy.png" alt="" />
         </div>
         <div class="factText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus recusandae repellat, illum neque a perferendis molestias, aperiam sequi quod dicta modi laudantium unde exercitationem fugiat necessitatibus nihil minus ipsum?</div>
       </div>
+      <img onclick="showText()" src="assets/add.svg" alt="More">
     </div>
 
   </div>
@@ -114,6 +115,19 @@
     </div>
   </div>
 
+  <script>
+    //document.querySelector('.js-add').addEventListener('clic', function() {})
+    function showText() {
+      var sypn = document.getElementById('synopsis');
+      sypn.classList.toggle('full');
+
+      var fact = document.getElementById('facts');
+      fact.style.display = 'flex';
+
+      var cont = document.getElementById('content');
+      cont.style.top = '33%';
+    }
+  </script>
 </body>
 
 </html>

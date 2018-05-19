@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+}
+
+header{
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 75px;
+  background-color: black;
+}
+
+#featured{
+  width: 100%;
+  display: flex;
+  height: 75vh;
+  margin-top: 75px;
+  background-image: url(../assets/featured.jpg);
+  background-size: cover;
+}
+
+#featured .description{
+  position: relative;
+  width: 580px;
+  height: 350px;
+  top: 15%;
+  left: 4%;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+#featured .description .title{
+  font-size: 320%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#featured .description .details{
+  width: 100%;
+  height: 31px;
+  margin-bottom: 10px;
+}
+
+#featured .description .synopsis{
+  width: 100%;
+  font-size: 140%;
+  margin-bottom: 10px;
+}
+
+#featured .description .facts{
+  width: 100%;
+  font-size: 120%;
+}
+
+#featured .description .facts .factText{
+  width: 100%;
+  font-size: 120%;
+}
+
+#content{
+  width: 100%;
+  margin-left: 4%;
+  position: relative;
+  top: -14%;
+  /*background-color: rgba(120,0,0,0.8);*/
+  min-height: 400px;
+}
+
+#content .category{
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+  margin-left: 4%;
+}
+
+#content .category .scrollingBar{
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  box-shadow: 5px 0px 60px rgba(0, 0, 0, 0.8);
+}
+
+#content .category .title{
+  width: 100%;
+  font-size: 150%;
+  color: white;
+  margin-bottom: 5px;
+}
+
+#content .category .element{
+  width: 232px;
+  height: 134px;
+  flex:  0 0 232px;
+  margin-left: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+#content .element img{
+  width: 100%;
+  height: 100%;
+}
+
+#content .category .element:hover{
+  flex: 0 0 279px;
+  height:  161px;
+  margin: 0px 5px;
+}

@@ -1,0 +1,60 @@
+{
+  "featured": {
+    "img":"featured2.jpg",
+    "description":{
+      "title": "Ozark",
+      "details": {},
+      "synopsis": "Un asesor financiero, es buena. Y el camino al infierno está lleno de buenas intenciones...",
+      "facts": {
+        "icon": "",
+        "factText": ""
+      }
+    }
+  },
+  "content":{
+    "categories":[
+      {
+        "title": "Continuar escuchando:",
+        "scrollingBar": [
+          {
+            "song": "avicii.mp3",
+            "img": "whiteCollar.webp"
+          },
+          {
+            "song": "cinema.mp3",
+            "img": "deadRising.webp"
+          }
+        ]
+      },
+      {
+        "title": "Hits del momento:",
+        "scrollingBar": [
+          {
+            "song": "cinema.mp3",
+            "img": "laPurga.webp"
+          },
+          {
+            "song": "avicii.mp3",
+            "img": "residentEvil.webp"
+          },
+          {
+            "song": "cinema.mp3",
+            "img": "quantico.webp"
+          },
+          {
+            "song": "avicii.mp3",
+            "img": "princeOfPersia.webp"
+          },
+          {
+            "song": "cinema.mp3",
+            "img": "tierraDeNadie.webp"
+          },
+          {
+            "song": "avicii.mp3",
+            "img": "juegosMentales.webp"
+          }
+        ]
+      }
+    ]
+  }
+}
